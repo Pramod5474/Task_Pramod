@@ -1,6 +1,6 @@
 <?php
-include 'config.php';
-include ("apis/user_login.php");
+include_once 'config.php';
+include_once ("apis/user_login.php");
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +24,11 @@ include ("apis/user_login.php");
 
         .contact-container {
             background-color: white;
-            padding: 20px;
+            /* padding: 20px; */
             border-radius: 10px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             height: 80%;
-            width: 60%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -41,7 +41,7 @@ include ("apis/user_login.php");
 
         form {
             margin-top: 20px;
-            width: 80%;
+            width: 90%;
             display: flex;
             flex-direction: column;
         }
@@ -62,11 +62,12 @@ include ("apis/user_login.php");
         }
 
         form button {
-            background-color: #007bff;
+            background-color: #962810;
             color: white;
+            font-size: 15px;
             cursor: pointer;
             border: none;
-            width: 50%;
+            width: 20%;
             margin-top: 20px;
             border-radius: 15px;
             font-weight: bold;

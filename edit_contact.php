@@ -1,6 +1,7 @@
 <?php
 include_once ('config.php');
 include_once ('apis/user_login.php');
+// include_once('header.php');
 $contact_details = get_contact_details($_REQUEST['id']);
 ?>
 
@@ -25,11 +26,10 @@ $contact_details = get_contact_details($_REQUEST['id']);
 
         .contact-container {
             background-color: white;
-            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            height: 80%;
-            width: 60%;
+            height: 70%;
+            width: 45%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -42,7 +42,7 @@ $contact_details = get_contact_details($_REQUEST['id']);
 
         .contact-container form {
             margin-top: 20px;
-            width: 80%;
+            width: 90%;
             display: flex;
             flex-direction: column;
         }
@@ -67,8 +67,9 @@ $contact_details = get_contact_details($_REQUEST['id']);
             color: white;
             cursor: pointer;
             border: none;
-            width: 50%;
+            width: 25%;
             margin-top: 20px;
+            font-size: 15px;
             border-radius: 15px;
             font-weight: bold;
         }

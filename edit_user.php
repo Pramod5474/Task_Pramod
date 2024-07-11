@@ -1,6 +1,7 @@
 <?php
 include_once ('config.php');
 include_once ('apis/user_login.php');
+
 $user_details = get_user_details($_REQUEST['id']);
 ?>
 <!DOCTYPE html>

@@ -1,6 +1,6 @@
 <?php
-include 'config.php';
-include ("apis/user_login.php");
+include_once 'config.php';
+include_once ("apis/user_login.php");
 ?>
 
 <!DOCTYPE html>
@@ -16,108 +16,9 @@ include ("apis/user_login.php");
   <title>Task</title>
 </head>
 
-<style>
-  body {
-    background-image: url("./img/wp.jpg");
-    background-size: cover;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    /* Remove scrollbar */
-  }
-
-  .navbar {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    z-index: 2;
-    /* Ensure navbar appears on top */
-  }
-
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-  }
-
-  .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  a:active {
-    color: yellow;
-  }
-
-  .dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .dropdown a {
-    cursor: pointer;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    min-width: 100px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .carousel-item {
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .carousel-inner {
-    height: 100%;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 10px;
-  }
-
-  .carousel-caption {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* opacity: 0.1; */
-  }
-</style>
 
 <!-- To show Alert Messages -->
- 
+
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -142,6 +43,9 @@ include ("apis/user_login.php");
           break;
         case '6':
           alertMessage = 'User Updated successfully...!!!';
+          break;
+        case '7':
+          alertMessage = 'Contact Updated successfully...!!!';
           break;
       }
       if (alertMessage) {

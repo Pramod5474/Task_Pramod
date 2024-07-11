@@ -1,5 +1,5 @@
 <?php 
-    include('apis/user_login.php');
+    include_once('apis/user_login.php');
 	include_once('config.php');
 
 	//To Delete Contact Details

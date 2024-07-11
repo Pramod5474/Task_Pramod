@@ -1,7 +1,7 @@
 <?php
-include 'config.php';
-include ("apis/user_login.php");
-
+include_once 'config.php';
+include_once ("apis/user_login.php");
+include_once ('header.php');
 
 // check messgae 
 if(isset($_GET["err_msg"])){
@@ -30,10 +30,11 @@ if(isset($_GET["err_msg"])){
 
         .container {
             display: flex;
-            height: 40%;
+            height: 45%;
             width: 80%;
             max-width: 900px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 0px;
         }
 
         .container .form-container {
@@ -74,10 +75,11 @@ if(isset($_GET["err_msg"])){
 
         .form-container form .form-group input[type="text"],
         input[type="password"] {
-            width: 80%;
+            width: 90%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            margin-top: 10px;
         }
 
         .form-container form .form-group input[type="email"]:focus {

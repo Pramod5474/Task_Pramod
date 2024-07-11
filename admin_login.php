@@ -1,7 +1,7 @@
 <?php 
-include 'config.php';
-// include 'index.php';
-include ("apis/user_login.php");
+include_once 'config.php';
+// include_once 'index.php';
+include_once ("apis/user_login.php");
 session_start();
 ?>
 
@@ -26,7 +26,7 @@ session_start();
 
         .container {
             display: flex;
-            height: 40%;
+            height: 42%;
             width: 30%;
             max-width: 900px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -39,12 +39,17 @@ session_start();
             width: 100%;
         }
 
+        .container .admin-login form{
+            margin-top: 15px;
+        }
+
         .container .admin-login .form-header {
             margin-bottom: 20px;
         }
 
         .container .admin-login .form-header h2 {
             text-align: center;
+            margin-top: 5%;
         }
 
         .log-head {
@@ -52,11 +57,15 @@ session_start();
             color: #555;
         }
 
-        .container .admin-login form .form-group {
-            margin-bottom: 15px;
+        .container .admin-login form{
+            height: 50%;
         }
 
-        form input[type="email"],
+        .container .admin-login form .form-group {
+            margin-bottom: 20px;
+        }
+
+        form input[type="text"],
         input[type="password"] {
             width: 80%;
             padding: 10px;
@@ -64,7 +73,7 @@ session_start();
             border-radius: 4px;
         }
 
-        form input[type="email"]:focus{
+        form input[type="text"]:focus{
             border: 3px solid blue;
         }
 
@@ -97,13 +106,13 @@ session_start();
             </div>
             <form method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input type="email" id="login-email" name="username" placeholder="Name *" required>
+                    <input type="text" id="login-email" name="username" placeholder="Name *" required>
                 </div>
                 <div class="form-group">
                     <input type="password" id="login-password" name="password" placeholder="Your Password *" required>
                 </div>
                 <input type="hidden" name="page_action" value="admin_login">
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">Login</button>    
             </form>
         </div>
     </div>

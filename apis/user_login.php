@@ -1,5 +1,5 @@
 <?php
-include ('config.php');
+include_once ('config.php');
 
 //User Registration 
 function add_user(){
@@ -86,11 +86,10 @@ function my_account(){
 
 //Updae User Details
 function edit_user(){
-	echo "hello";
     global $conn;
 
     $file_name=$str="";
-    if($_FILES['image']['name']!=""){
+    if(isset($_FILES['image']['name']) && $_FILES['image']['name']!=""){
 
 
     $file_name=rand().'_'.$_FILES['image']['name'];
@@ -99,8 +98,7 @@ function edit_user(){
     $str=",`image`='".$file_name."'";
     }
 
-    $query = "UPDATE `tbl_account` SET `name`='".$_REQUEST['name']."', `image`='".$file_name."' $str WHERE `id`='".$_REQUEST['id']."'";
-    echo $query;
+    $query = "UPDATE `tbl_account` SET `name`='".$_REQUEST['name']."' $str WHERE `id`='".$_REQUEST['id']."'";
     mysqli_query($conn,$query);
     header('location:account.php?msg=6');	
 }
