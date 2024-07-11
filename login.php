@@ -72,7 +72,7 @@ if(isset($_GET["err_msg"])){
             color: #555;
         }
 
-        .form-container form .form-group input[type="email"],
+        .form-container form .form-group input[type="text"],
         input[type="password"] {
             width: 80%;
             padding: 10px;
@@ -117,7 +117,7 @@ if(isset($_GET["err_msg"])){
             </div>
             <form method="post" enctype="multipart/form-data" onsubmit="return validateLoginForm()">
                 <div class="form-group">
-                    <input type="email" id="login-email" name="username" placeholder="Name *">
+                    <input type="text" id="login-email" name="username" placeholder="Name *">
                 </div>
                 <div class="form-group">
                     <input type="password" id="login-password" name="password" placeholder="Your Password *">
@@ -137,7 +137,7 @@ if(isset($_GET["err_msg"])){
             
             <form method="post" enctype="multipart/form-data" onsubmit="return validateSignupForm()">
                 <div class="form-group">
-                    <input type="email" id="signup-email" name="username" placeholder="Your Email *">
+                    <input type="text" id="signup-email" name="username" placeholder="Username *">
                 </div>
                 <div class="form-group">
                     <input type="password" id="signup-password" name="password" placeholder="Your Password *">
