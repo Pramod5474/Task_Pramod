@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2024 at 10:25 PM
+-- Generation Time: Jul 11, 2024 at 09:26 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -94,13 +94,13 @@ INSERT INTO `tbl_user` (`id`, `username`, `password`, `role`) VALUES
 (1, 'katkarp5474@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user'),
 (2, 'admin@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'admin'),
 (3, 'abc@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user'),
-(4, 'aa@gmail.com', '25d55ad283aa400af464c76d713c07ad', ''),
 (5, 'bb@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user'),
 (6, 'mayur@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user'),
 (7, 'rohan@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user'),
 (8, 'sai@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user'),
 (9, 'shri@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user'),
-(10, 'sakshi@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user');
+(10, 'sakshi@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user'),
+(11, 'Pramod', '25d55ad283aa400af464c76d713c07ad', 'user');
 
 --
 -- Indexes for dumped tables
@@ -144,7 +144,7 @@ ALTER TABLE `tbl_contact`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -16,7 +16,7 @@ Note : Exported Database File is kept in database folder of this same directory.
 
 	* NOTE : 
 	- For admin login :  use 'admin@gmail.com' as username and '12345678' for password
-	- For user login :  use 'katkarp5474@gmail.com' as username and '12345678' for password
+	- For user login :  use 'Pramod' as username and '12345678' for password
 
 2) tbl_account
 
