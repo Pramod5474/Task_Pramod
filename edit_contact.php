@@ -1,7 +1,6 @@
 <?php
 include_once ('config.php');
 include_once ('apis/user_login.php');
-// include_once('header.php');
 $contact_details = get_contact_details($_REQUEST['id']);
 ?>
 
@@ -11,99 +10,25 @@ $contact_details = get_contact_details($_REQUEST['id']);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/edit_contact.css">
     <title>Edit User</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .contact-container {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            height: 70%;
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contact-container h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        .contact-container form {
-            margin-top: 20px;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact-container form label {
-            margin-top: 10px;
-            color: #333;
-        }
-
-        .contact-container form input,
-        textarea,
-        select,
-        button {
-            margin-top: 5px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-container form button {
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            border: none;
-            width: 25%;
-            margin-top: 20px;
-            font-size: 15px;
-            border-radius: 15px;
-            font-weight: bold;
-        }
-
-        .contact-container form button:hover {
-            background-color: #555;
-        }
-
-        .required {
-            color: red;
-            margin-left: 5px;
-        }
-    </style>
-
 </head>
 
 <body>
-
     <!-- To Update Contact Us Form -->
 
     <div class="contact-container">
         <h1>Contact Us</h1>
         <form method="post" enctype="multipart/form-data">
             <label for="name"> Your Name <span class="required">*</span></label>
-            <input type="text" name="name"
-                value="<?php if (isset($contact_details['name'])) {
-                    echo $contact_details['name'];
-                } ?>">
+            <input type="text" name="name" value="<?php if (isset($contact_details['name'])) {
+                echo $contact_details['name'];
+            } ?>">
 
             <label for="address"> Your Address <span class="required">*</span></label>
-            <input type="text" name="address"
-                value="<?php if (isset($contact_details['address'])) {
-                    echo $contact_details['address'];
-                } ?>">
+            <input type="text" name="address" value="<?php if (isset($contact_details['address'])) {
+                echo $contact_details['address'];
+            } ?>">
 
             <label for="city"> Your City <span class="required">*</span></label>
             <select id="city" name="city" required>
@@ -118,15 +43,10 @@ $contact_details = get_contact_details($_REQUEST['id']);
                     echo 'selected'; ?>>Pune</option>
             </select>
 
-            <?php
-
-            ?>
-
             <label for="message">Your Message <span class="required">*</span></label>
-            <textarea name="message"
-                required><?php if (isset($contact_details['message'])) {
-                    echo htmlspecialchars($contact_details['message']);
-                } ?></textarea>
+            <textarea name="message" required><?php if (isset($contact_details['message'])) {
+                echo htmlspecialchars($contact_details['message']);
+            } ?></textarea>
 
             <button type="submit">Update</button>
 

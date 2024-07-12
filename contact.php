@@ -9,79 +9,8 @@ include_once ("apis/user_login.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Contact Us</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .contact-container {
-            background-color: white;
-            /* padding: 20px; */
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            height: 80%;
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contact-container h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        form {
-            margin-top: 20px;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        form label {
-            margin-top: 10px;
-            color: #333;
-        }
-
-        form input,
-        textarea,
-        select,
-        button {
-            margin-top: 5px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        form button {
-            background-color: #962810;
-            color: white;
-            font-size: 15px;
-            cursor: pointer;
-            border: none;
-            width: 20%;
-            margin-top: 20px;
-            border-radius: 15px;
-            font-weight: bold;
-        }
-
-        form button:hover {
-            background-color: #555;
-        }
-
-        .required {
-            color: red;
-            margin-left: 5px;
-        }
-    </style>
 </head>
 <body>
 

@@ -9,49 +9,7 @@ session_start();
 <head>
     <title>Admin Panel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        .heading {
-            font-size: 30px;
-            margin-bottom: 20px;
-            text-align: center;
-            justify-content: center;
-            color: green;
-            font-weight: bold;
-        }
-
-        .logout {
-            margin-bottom: 20px;
-        }
-
-        .table-container {
-            margin-top: 20px;
-        }
-
-        .btn-danger,
-        .btn-primary {
-            margin-right: 10px;
-        }
-
-        .btn-danger {
-            background-color: #dc3545;
-            border-color: #dc3545;
-        }
-
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-
-        .table-dark th {
-            background-color: #343a40;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="css/admin_panel.css">
 </head>
 
 <body>

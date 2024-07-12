@@ -3,85 +3,8 @@ include_once 'config.php';
 include_once ("apis/user_login.php");
 include_once("header.php");
 ?>
-
+    <link rel="stylesheet" href="css/account.css">
     <title>Contact Us</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .contact-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            height: 50%;
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contact-container h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        .contact-container form {
-            margin-top: 20px;
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact-container form label {
-            margin-top: 10px;
-            color: #333;
-        }
-
-        .contact-container form input,
-        button {
-            margin-top: 5px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-container form input[type="file"] {
-            padding: 3px;
-        }
-
-        .contact-container form button {
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-            border: none;
-            width: 50%;
-            margin-top: 20px;
-            border-radius: 15px;
-            font-weight: bold;
-        }
-
-        .contact-container form button:hover {
-            background-color: #555;
-        }
-
-        .contact-container form .required {
-            color: red;
-            margin-left: 5px;
-        }
-
-        .second-container {
-            margin-left: 5%;
-        }
-    </style>
 
     <!-- My Account Form -->
     <div class="contact-container">

@@ -1,8 +1,9 @@
 
-Note : Exported Database File is kept in database folder of this same directory.
-
+Note : 	- Exported Database File is kept in database folder of this same directory.
+		- CSS files of this task are kept in css folder.
 
 ** Database Structure -
+
 
 *Task - Folder Name:
 

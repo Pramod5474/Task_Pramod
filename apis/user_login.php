@@ -105,27 +105,27 @@ function edit_user(){
 
 //Update Contact Us form details
 function edit_contact(){
-	
     global $conn;
 
     $file_name=$str="";
-    if($_FILES['image']['name']!=""){
+    if(isset($_FILES['image']['name']) && $_FILES['image']['name']!=""){
+
+
     $file_name=rand().'_'.$_FILES['image']['name'];
 
-    move_uploaded_file($_FILES['image']['tmp_name'], 'img/'.$file_name);
+    move_uploaded_file($_FILES['image']['tmp_name'], 'uploads/'.$file_name);
     $str=",`image`='".$file_name."'";
-}
+   }
 
-    mysqli_query($conn,"UPDATE `tbl_contact` SET 
-        `name`='".$_REQUEST['name']."',
-        `address`='".$_REQUEST['address']."',
-        `city`='".$_REQUEST['city']."',
-        `message`='".$_REQUEST['message']."',
-        `image`='".$file_name."'
-        $str
-        WHERE `id`='".$_REQUEST['id']."'
-    ");
-    header('location:admin_panel.php?msg=7');	
+    $query = "UPDATE `tbl_contact` SET 
+    `name`='".$_REQUEST['name']."',
+    `address`='".$_REQUEST['address']."',
+    `city`='".$_REQUEST['city']."',
+    `message`='".$_REQUEST['message']."'
+    $str 
+    WHERE `id`='".$_REQUEST['id']."'";
+    mysqli_query($conn,$query);
+    header('location:admin_panel.php?msg=7');		
 }
 
 //Fetch Contact Details for listing

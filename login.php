@@ -7,106 +7,16 @@ include_once ('header.php');
 if(isset($_GET["err_msg"])){
     echo "<script>alert('". $_GET["err_msg"]. "')</script>";
 }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
     <title>Login and Sign Up</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            display: flex;
-            height: 45%;
-            width: 80%;
-            max-width: 900px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            padding: 0px;
-        }
-
-        .container .form-container {
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 50%;
-        }
-
-        #signup-container {
-            background-color: #007bff;
-        }
-
-        .container .form-container .form-header {
-            margin-bottom: 20px;
-        }
-
-        .container .form-container .form-header h2 {
-            text-align: center;
-            margin: 0;
-            color: #555;
-        }
-
-        #sign-head {
-            margin: 0;
-            color: white;
-        }
-
-        .form-container form .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-container form label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        .form-container form .form-group input[type="text"],
-        input[type="password"] {
-            width: 90%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-top: 10px;
-        }
-
-        .form-container form .form-group input[type="email"]:focus {
-            border: 3px solid blue;
-        }
-
-        .form-container form .form-group input[type="password"]:focus {
-            border: 3px solid blue;
-        }
-
-        .form-container form .btn {
-            width: 40%;
-            padding: 10px;
-            background: #007bff;
-            border: none;
-            color: white;
-            border-radius: 15px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        #signup-button {
-            background: white;
-            color: #007bff;
-        }
-    </style>
 </head>
 <body>
 
